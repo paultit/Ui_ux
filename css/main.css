@@ -1,0 +1,57 @@
+.app header .nav {
+    padding: 20px 0;
+}
+
+.app header .navbar-brand,
+.app footer .footer-top .logo {
+    width: 100%;
+    background-size: cover;
+}
+
+.app header .navbar-nav li {
+    margin-right: 25px;
+}
+
+.app header .navbar-nav li:last-child {
+    margin-right: 0;
+}
+
+.app header .navbar-nav li a {
+    font-family: "AvenirNextCyr", sans-serif;
+    font-size: 24px;
+}
+
+.app header .social-icons {
+    padding-top: 20px;
+}
+
+.app header .social-icons li {
+    list-style: none;
+}
+
+.app header .social-icons li:hover a {
+    text-decoration: none;
+}
+
+.app header .social-icons li.envelop {
+    margin-right: 20px;
+}
+
+.app header .social-icons li.facebook {
+    margin-right: 50px;
+}
+
+.app header .social-icons i {
+    font-size: 40px;
+}
+
+.app footer .contacts i {
+    margin-right: 25px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.app aside img {
+    width: 100%;
+}
+
