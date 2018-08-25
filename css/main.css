@@ -58,7 +58,7 @@
 }
 
 .app section main .card .card-header {
-    padding: 0 15px 10px;
+    padding: 0 14px 10px;
 }
 
 .app section main .card .whole-time {
@@ -75,7 +75,7 @@
 
 .app section main .card .dropdown {
     margin-bottom: 0;
-   padding: 20px 0;
+    padding: 20px 0;
 }
 
 .app section main .card .dropdown.night {
