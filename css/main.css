@@ -1,5 +1,5 @@
-.app header .nav {
-    padding: 20px 0;
+.app header {
+    background-color: #98FB98;
 }
 
 .app header .navbar-brand,
@@ -19,6 +19,7 @@
 .app header .navbar-nav li a {
     font-family: "AvenirNextCyr", sans-serif;
     font-size: 24px;
+    color: #2F4F4F;
 }
 
 .app header .social-icons {
@@ -42,16 +43,292 @@
 }
 
 .app header .social-icons i {
-    font-size: 40px;
+    font-size: 35px;
+    color: #2F4F4F;
 }
 
-.app footer .contacts i {
-    margin-right: 25px;
-    margin-bottom: 20px;
-    font-size: 25px;
+.app section.content {
+   padding: 20px 0;
+   background-color: #E0FFFF;
 }
 
-.app aside img {
+.app section main .card {
+    margin-bottom: 30px;
+    box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.2)
+}
+
+.app section main .card .card-header {
+    padding: 0 15px 10px;
+}
+
+.app section main .card .whole-time {
+    font-family: "AvenirNextCyr", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.app section main .card .whole-time span {
+    font-weight: 500;
+    color: #2980b9;
+}
+
+.app section main .card .dropdown {
+    margin-bottom: 0;
+   padding: 20px 0;
+}
+
+.app section main .card .dropdown.night {
+    background-color: #006400;
+}
+
+.app section main .card .dropdown.day {
+    background-color: #ADFF2F;
+}
+
+.app section main .card .dropdown li {
+    padding-left: 10px;
+    font-family: "AvenirNextCyr", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    list-style: none;
+}
+
+.app section main ul li.dropdown-toggle::after {
+    display: none;
+}
+
+.app section main ul li.dropdown-toggle i {
+    font-size: 17px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.app section main .dropdown-menu {
+    width: 100%;
+    padding: 20px 0 0 0;
+}
+
+.app section main .dropdown-menu li {
+    padding: 20px 0 20px 10px;
+    font-family: "AvenirNextCyr", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    border-bottom: 1px solid #000000;
+}
+
+.app section main .dropdown-menu li.active {
+    color: #f5fcfe;
+    background: #f07940;
+}
+
+.app section main .dropdown-menu li:after {
+    content: 'free';
+    position: absolute;
+    right: 15px;
+}
+
+.app section main .dropdown-menu li.active::after {
+    content: 'work';
+}
+
+.app .content .card {
+    margin-bottom: 30px;
+}
+
+.app aside .card:hover {
+    transform: scale(1.1);
+}
+
+.app aside .card .card-img-top img {
     width: 100%;
 }
 
+.app aside .card .card-date {
+    font-family: "AvenirNextCyr", sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.app aside .card .card-text {
+    font-family: "AvenirNextCyr", sans-serif;
+    font-size: 20px;
+}
+
+.app aside .warning {
+    padding: 20px 0 20px 20px;
+    font-family: "AvenirNextCyr", sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    color: #D3D3D3;
+    background-color: #008000;
+}
+
+.app aside .warning i {
+    font-size: 40px;
+    color: #B22222;
+}
+
+.app .footer-top {
+    padding: 20px 0;
+    background-color: #98FB98;
+}
+
+.app .footer-top .contacts a {
+    font-family: "AvenirNextCyr", sans-serif;
+    font-size: 16px;
+    color: #2F4F4F;
+}
+
+.app .footer-top .contacts a:hover {
+    text-decoration: none;
+}
+
+.app .footer-top .contacts i {
+    margin-right: 25px;
+    font-size: 24px;
+    color: #2F4F4F;
+}
+
+.app .footer-bottom {
+    padding: 20px 0;
+    background-color: #E0FFFF;
+}
+
+.app .footer-bottom p {
+    margin-bottom: 0;
+    font-family: "AvenirNextCyr", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #2F4F4F;
+}
+
+@media (max-width: 991px) {
+    .app header nav .navbar-toggler {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 68px;
+        height: 60px;
+        margin-left: auto;
+        font-size: 25px;
+        text-indent: -9999px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        box-shadow: none;
+        border-radius: none;
+        border: none;
+        cursor: pointer;
+        -webkit-transition: background 0.3s;
+        transition: background 0.3s;
+        background: #808080;
+    }
+
+    .app header nav .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .app header nav .navbar-toggler span {
+        display: block;
+        position: absolute;
+        top: 28px;
+        left: 15px;
+        right: 15px;
+        height: 6px;
+        background: white;
+    }
+
+    .app header nav .navbar-toggler span::before,
+    .app header nav .navbar-toggler span::after {
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 6px;
+        background-color: #fff;
+        content: "";
+    }
+
+    .app header nav .navbar-toggler span::before {
+        top: -18px;
+    }
+
+    .app header nav .navbar-toggler span::after {
+        bottom: -18px;
+    }
+
+    .app header .social-icons {
+       display: none !important;
+    }
+
+    .app header img{
+        margin: 0 auto;
+        display: block;
+        width: 180px;
+    }
+
+    .app section main {
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .app section aside {
+        margin: 0 auto 25px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .app footer .footer-top .col-12 {
+        flex-direction: column;
+    }
+
+    .app footer .footer-top .col-md-4 {
+        margin: 0 auto 25px;
+        max-width: 200px;
+    }
+
+    .app footer .footer-top .col-md-5 {
+        margin: 0 auto;
+        width: 285px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .app footer .footer-top .col-md-5 {
+        width: 235px;
+    }
+
+    .app .footer-top .contacts a {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .app .footer-top .contacts .email {
+        width: 210px;
+    }
+
+    .app .footer-top .contacts .facebook {
+        width: 78px;
+    }
+
+    .app .footer-top .contacts i {
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 285px) {
+    .app .footer-bottom p {
+        text-align: center;
+    }
+
+    .app header img{
+        max-width: 150px;
+    }
+}
