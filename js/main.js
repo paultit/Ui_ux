@@ -7,4 +7,5 @@
         hoursValue = item.classList.contains('active') ? ++hoursValue : --hoursValue;
         totalHoursSpan.textContent = `${hoursValue}`;
     }));
+    hours.map(item => item.addEventListener('click', (event) => event.stopPropagation()));
 })();
